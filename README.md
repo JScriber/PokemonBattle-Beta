@@ -1,11 +1,9 @@
 # PokemonBattle Bêta
-------
-
-# Project's seed
+## Project's seed
 **Pokemon Battle** has been created during August 2015.
 At the beginning, the goal of the project was to use animated GIF in order to create a pokemon-like battle into the browser. Entirely coded in HTML/CSS and mainly JavaScript the game allows each user to choose one single Pokemon in a list. Then, both creatures start fighting according to their trainer's will.
 
-# There's still work to be done
+## Work left
 Indeed, the project is far to be complete. Find hereby the feature to add:
 - Status issues (poison, etc) ;
 - Select more than one Pokemon ;
@@ -13,10 +11,12 @@ Indeed, the project is far to be complete. Find hereby the feature to add:
 - Add special ability to each Pokemon ; 
 - So on.
 
-# Sneak peek
+## Sneak peek
 Here some screenshots.
-
+![choose your pokemon](https://user-images.githubusercontent.com/27382087/38055738-dae61f5a-32da-11e8-8b2a-ec3b37d7f69b.jpg)
+![battle](https://user-images.githubusercontent.com/27382087/38055798-02cd9e58-32db-11e8-9716-6b59ae31694c.jpg)
+![fighting](https://user-images.githubusercontent.com/27382087/38055861-29327604-32db-11e8-92f9-a61cb0d669e3.jpg)
 
 # Other things to mention
-The animated images have been found on Pokemontrash. 
+The animated images have been found on [Pokemontrash](http://www.pokemontrash.com/pokedex/liste-pokemon.php) without whom nothing would have been possible.
 
