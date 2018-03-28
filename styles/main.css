@@ -1,0 +1,402 @@
+*
+{
+margin:0; padding:0;
+font-family: arial;
+}
+::-webkit-scrollbar{ 
+	background-color: #840d00;
+}
+::-webkit-scrollbar-thumb{
+	background-color: rgba(0, 0, 0,.4);
+}
+::selection{
+	background-color:#840d00;
+	color:#fff;
+}
+/*-------------------------------------------------------*\
+	Audio
+\*-------------------------------------------------------*/
+#audioControl
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	bottom:0;
+	right: 0;
+	height: 80px;
+	width: 80px;
+	background-color: rgba(0, 0, 0,.7);
+	z-index: 800000000000000;
+	transition: all .3s linear 0s;
+}
+#audioControl:hover
+{
+	background-color: rgba(0, 0, 0, 1);
+}
+#audioControl img
+{
+	position: relative;
+	right:-4px;
+	cursor: pointer;
+	height: 40px;
+	padding: 20px;
+}
+/*-------------------------------------------------------*\
+	Selection
+\*-------------------------------------------------------*/
+#selectionBox
+{
+	display: block;
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #840d00;
+	z-index: 8000;
+	text-align: center;
+}
+
+/* Listes des pokémons*/
+#selectionBox #listePokemons
+{
+	display: block;
+	margin:20px auto;
+	width: 700px;
+	height: 90%;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+.listepkmnsolo
+{
+	cursor: pointer;
+	display: block;
+	float: left;
+	width: 120px;
+	padding:40px 0 40px 0;
+	background-color: purple;
+	margin:5px;
+	border:2px solid #fff;
+	border-radius: 6px;
+	opacity: .7;
+}
+.listepkmnsolo:hover
+{
+	opacity: 1;
+}
+.listepkmnsolo img
+{
+	display: block;
+	margin:auto;
+	height: 50px;
+}
+.listepkmnsolo p
+{
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	padding-bottom: 4px;
+}
+
+#selectionPanel
+{
+	position: absolute;
+	display: block;
+	top:5px;
+	left: 5px;
+}
+#selectionPanel p
+{
+	cursor: default;
+	color: #fff;
+	font-size: 25px;
+}
+
+/*-------------------------------------------------------*\
+	Gagnant
+\*-------------------------------------------------------*/
+#gagnant
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #840d00;
+	z-index: 1;
+}
+#gagnantIdentiter
+{
+	width: 50%;
+	height: 50%;
+	margin:auto;
+	text-align: center;
+}
+#gagnant .gagnantDresseur
+{
+	display: block;
+	font-size: 35px;
+	color: #fff;
+}
+#gagnant img
+{
+	display: block;
+	height: 300px;
+	margin:20px auto;
+}
+#gagnant .gagnantNom
+{
+	display: block;
+	font-size: 45px;
+	color: #fff;
+}
+
+/*-------------------------------------------------------*\
+	Conteneur
+\*-------------------------------------------------------*/
+#conteneur
+{
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #000;
+	background-image: url("css_pict/fond/fond.jpg");
+	background-size: cover;
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	z-index: 100;
+}
+#sousconteneur
+{
+	position: relative;
+	margin:0 auto;
+	width: 500px;
+	height: 100%;
+}
+
+
+
+#stats
+{
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+	background-color: #ed6c53;
+	border: 2px solid #840d00;
+	overflow: hidden;
+}
+#infobox
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	width: 100%;
+	background-color: #840d00;
+}
+#infobox p
+{
+	cursor: pointer;
+	display: block;
+	font-size: 18px;
+	color: rgba(255, 255, 255, .7);
+}
+#infobox p:before , #infobox p:after
+{
+	content: ' - ';
+}
+
+#statuts
+{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 65px;
+}
+#statuts li
+{
+	float: left;
+	display: block;
+	height: 100%;
+	width: 50%;
+	list-style-type: none;
+}
+#statuts li p
+{
+	cursor: pointer;
+	display: block;
+	text-align: center;
+	margin-top: 4px;
+	font-size: 18px;
+	width: 100%;
+	color:#840d00;
+}
+#statuts li p.sttVie
+{
+	position: relative;
+	top: -3px;
+	font-size: 17px;
+	opacity: .8;
+}
+
+#statuts li div
+{
+	position: relative;
+	display: block;
+	margin:auto;
+	width: 80%;
+	height: 15px;
+	background: transparent;
+	border: 1px solid #840d00;
+	border-radius: 14px;
+}
+#statuts li div span
+{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #840d00;
+	border-radius: 14px;
+	transition: all .4s linear 0s;
+}
+
+
+
+#ecran
+{
+	position: relative;
+	cursor: default;
+	display: block;
+	margin:auto;
+	width: 100%;
+	height: 280px;
+	background-color: #000;
+	background-image: url("css_pict/fond/herbe.png");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+#ecran #ecrinfos
+{
+	display: block;
+	text-align: center;
+	/*display: flex;
+	align-items: center;
+	justify-content: center;*/
+	position: absolute;
+	top: 10px;
+	width: 300px;
+	/*height: 50px;*/
+	border-radius: 0 10px 10px 0;
+	z-index: 80000000;
+	background-color: rgba(0, 0, 0,.9);
+}
+#ecran #ecrinfos p
+{
+	padding-top:9px;
+	padding-bottom:9px;
+	color: #fff;
+	font-size: 18px;
+}
+#ecran div
+{
+	display: block;
+	position: absolute;
+	background-size: 75%;
+	background-repeat: no-repeat;
+}
+#ecr1
+{
+	background-image: url("");
+	height: 10px;
+	width: 10px;
+	bottom: 0px;
+	left: 0px;
+	z-index: 5000;
+}
+#ecr2
+{
+	background-image: url("");
+	height: 10px;
+	width: 10px;
+	top: 0px;
+	right: 0px;
+	z-index: 100;
+}
+
+
+
+
+#attaques
+{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 200px;
+	margin-top: 10px;
+	overflow: hidden;
+}
+#attaques ul
+{
+	position: relative;
+	float: left;
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	list-style-type: none;
+	transition: all .4s linear 0s;
+}
+#attaques ul li
+{
+	cursor: pointer;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	float: left;
+	width: 50%;
+	height: 50%;
+	overflow: hidden;
+	text-align: center;
+	background-color: #840d00;
+	transform:scale(.85);
+	transition: all .3s ease 0s;
+}
+#attaques ul li:hover
+{
+	transform:scale(.95);
+}
+#attaques ul li ol
+{
+	display: block;
+}
+#attaques ul li ol a
+{
+	cursor: pointer;
+	display: block;
+	color: #fff;
+	font-size: 22px;
+}
+#attaques ul li ol p
+{
+	cursor: pointer;
+	display: block;
+	color: rgba(255, 255, 255, .7);
+	margin-top: 5px;
+	font-size: 19px;
+}
+#attaques ul li ol .ppt:before
+{
+	content: '/ ';
+}
+
